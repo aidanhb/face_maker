@@ -38,12 +38,12 @@ def ends_with_vowel(name):
 def in_orderedness(name):
     name = name.lower()
     in_order = 0
-    max = (len(name) ** 2 - len(name)) / 2 or 1
+    _max = (len(name) ** 2 - len(name)) / 2 or 1
     for i in range(1, len(name)):
         for c in name[:i]:
             if name[i] > c:
                 in_order += 1
-    return in_order / max
+    return in_order / _max
 
 
 def oddness(name):
