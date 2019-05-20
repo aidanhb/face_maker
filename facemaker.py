@@ -15,7 +15,7 @@ class Head:
         self.width = 20
         self.length = 5 + longness(name) * 25
         self.outline = 0
-        self.hairs = int(10 * sum_mod(name)) or 1
+        self.hairs = int(7 * sum_mod(name)) + int(6 * pyramidiness(name)) or 1
         self.hair_length = 10 + sporkiness(name) * 50 + funkiness(name) * 40
         self.hair_angle = 10 + 80 * sporkiness(name) + 90 * bounciness(name)
         self.hair_thickness = abs(30 * sporkiness(name) - 20 * sum_mod(name))
